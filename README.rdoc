@@ -1,0 +1,6 @@
+= Tradui Dictionary Parser
+
+== Description
+
+This is a simple Ruby parser that works specifically for the dictionary file within this repository.  The purpose of this is to create a SQL script to load the creole to English dictionary for our mobile application, Tradui (Creole for Translation).  The mobile application was created for CrisisCamp Haiti (http://crisiscamphaitiwdc.eventbrite.com/) to aid NGO's in the field with translating Creole to English.
+

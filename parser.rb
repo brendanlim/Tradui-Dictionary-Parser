@@ -10,8 +10,8 @@ translations = [];
   translations.push({"#{creole}" => xml_term.search("/value").collect{|x| x.innerHTML}})
 end
 
-translations.each do |hash|
-  hash.each_pair do |key,values|
+translations.each do |hash_values|
+  hash_values.each_pair do |key,values|
     values.each do |value|    
       p "INSERT INTO DICTIONARY (CREOLE,ENGLISH) VALUES ('#{key}','#{value}');"
     end
