@@ -8,10 +8,9 @@ translations = [];
 (doc/:term).each do |xml_term|
   creole = xml_term.attributes["word"]
   translations.push({"#{creole}" => xml_term.search("/value").collect{|x| x.innerHTML}})
-  break if creole == 'zwazo'
+  break if creole == 'zwazo' # break on the last creole word
 end
 
-count = 0
 translations.each do |hash_values|
   hash_values.each_pair do |key,values|
     values.each do |value|
@@ -19,6 +18,3 @@ translations.each do |hash_values|
     end
   end
 end
-
-p translations.size
-p count
